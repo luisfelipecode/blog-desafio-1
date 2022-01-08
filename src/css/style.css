@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap");
+
+* {
+	box-sizing: border-box;
+	font-family: "Lexend Deca", "Inter", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #f9f9f9;
+}
+
+.container {
+	margin: 0 auto;
+	width: calc(51vw + 20px);
+}
+
+input:focus {
+	outline: none;
+}
+
+input::placeholder {
+	color: #fff;
+	text-align: left;
+}
+
+header {
+	background-image: linear-gradient(to right, #574ae8, #3ea1db);
+	padding-top: 40px;
+	height: 250px;
+}
+
+header div .title {
+	color: #fff;
+	display: flex;
+	font-size: 1.2rem;
+	justify-content: space-between;
+}
+
+header .input-form input {
+	background-color: rgb(255 255 255 / 20%);
+	background-image: url("../img/search.min.svg");
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	background-position: center left 7px;
+	border: none;
+	color: #fff;
+	font-family: "Inter", sans-serif;
+	font-size: 1.1rem;
+	width: 100%;
+	height: 65px;
+	padding-left: 35px;
+	margin-top: 70px;
+}
+
+section .box {
+	padding: 25px;
+	background-color: #fff;
+	box-shadow: 0 0 5px #71717133;
+	margin-top: 50px;
+}
+
+section .box .box-head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+section .box .box-head small {
+	margin-bottom: 13px;
+	text-transform: uppercase;
+	color: #615b5b;
+}
+
+section .box .box-body h1 {
+	color: #1a202c;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+section .box .box-body p {
+	color: #717171;
+	font-family: "Lexend Deca", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	line-height: calc(1.1em + 0.5vw);
+	padding-top: 10px;
+}
+
+@media (max-width: 1100px) {
+	.container {
+		width: calc(75vw - 30px);
+	}
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: calc(90vw - 30px);
+	}
+}
